@@ -110,9 +110,16 @@ $(document).ready(function() {
     
     
     
+    /* popup */
+
+    $('.popup--meal-photo').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        mainClass: 'mfp-fade'
+    });
     
     
-    
+
     
     
     

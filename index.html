@@ -18,7 +18,9 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
-    
+ 
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/magnific-popup.css">
+
     </head>
     
     <body>
@@ -99,12 +101,44 @@
             </div>
         </section>
         
+
+        
+        
         <section class="section-meals">
             <ul class="meals-showcase clearfix">
                 <li>
                     <figure class="meal-photo">
-                        <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+                        <a href="#bibimbap" class="popup--meal-photo"><img src="resources/img/1.jpg" 
+                             alt="Korean bibimbap with egg and vegetables"></a>
                     </figure>
+                    
+                    <div id="bibimbap" class="popup--box mfp-hide">
+                        
+                        <div class="bibimbap__hero">
+                            <img src="resources/img/1.jpg" alt="bibimbap" class="bibimbap__img">
+                        </div>
+                        
+                        <div class="bibimbap__content">
+                            <div class="bibimbap__title">
+                                <p class="bibimbap__heading"><strong>Korean Bibimbap ✔️</strong></p>
+                                <div class="bibimbap__tag bibimbap__tag--1">#egg</div>
+                                <div class="bibimbap__tag bibimbap__tag--2">#vegetables</div>
+                            </div>
+                            <p class="bibimbap__description">
+                                Along with kimchi, bibimbap takes its place among the favored foods in Korean cuisine. Literally meaning 'mixed rice,' it's a popular meal consisting of white rice topped with vegetables, beef, a whole egg, and gochujang (red chili pepper paste). 
+                            </p>
+                            <div class="bibimbap__details">
+                                <p class="bibimbap__detail"><span class="emoji">🍚</span>671 kcal</p>
+                                <p class="bibimbap__detail"><span class="emoji">⏱</span>30 min</p>
+                                <p class="bibimbap__detail"><span class="emoji">⭐️</span>4.7 / 5</p>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="bibimbap__price">$ 11.99</div>
+                        
+                    </div>
+                    
                 </li>
                 <li>
                     <figure class="meal-photo">
@@ -457,7 +491,7 @@
                 </p>
             </div>
             
-        </footer>
+        </footer> 
         
 
         
@@ -471,6 +505,21 @@
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     
     <script src="resources/js/script.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="http://cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/jquery.magnific-popup.min.js"></script>
+    
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145742191-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-145742191-1');
+    </script>
+
           
                  
     </body>
